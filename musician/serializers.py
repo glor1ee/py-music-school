@@ -6,4 +6,4 @@ from musician.models import Musician
 class MusicianSerializer(serializers.ModelSerializer):
     class Meta:
         model = Musician
-        fields = '__all__'
+        fields = "__all__"

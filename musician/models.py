@@ -9,7 +9,6 @@ class Musician(models.Model):
     age = models.IntegerField(validators=[MinValueValidator(14)])
     date_of_applying = models.DateField(auto_now_add=True)
 
-
     @property
     def is_adult(self):
         return self.age >= 21
